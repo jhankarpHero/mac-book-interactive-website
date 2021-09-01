@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Mac Book Pro!</title>
+</head>
+
+<body>
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <img src="./images/mac.png" class=" img-fluid px-5" alt="" srcset="">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="mb-5">
+                    <h1>Customize your Blue 24‑inch <br> iMac with Apple M1 chip.</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and
+                        16-core Neural Engine
+                        8GB unified memory
+                        256GB SSD storage
+                        Two Thunderbolt / USB 4 ports
+                        Magic Mouse
+                        Magic Keyboard - US English</p>
+                </div>
+                <div class="mb-5">
+                    <h6 class="fw-bolder">Memory</h6>
+                    <button id="8gb-memory" onclick="memoryPriceCalculator('8gb')"
+                        class="btn btn-outline-dark text-left">8GB unified memory</button>
+                    <button onclick="memoryPriceCalculator('16gb')" id="16gb-memory"
+                        class="btn btn-outline-dark text-left">16GB unified memory</button>
+                </div>
+                <div class="mb-5">
+                    <h6 class="fw-bolder">Storage</h6>
+                    <button onclick="storagePriceCalculator('256gb')" class="btn btn-outline-dark text-left">256GB SSD
+                        storage</button>
+                    <button onclick="storagePriceCalculator('512gb')" class="btn btn-outline-dark text-left">512GB SSD
+                        storage</button>
+                    <button onclick="storagePriceCalculator('1tb')" class="btn btn-outline-dark text-left">1TB SSD
+                        storage</button>
+                </div>
+                <div class="mb-5">
+                    <h6 class="fw-bolder">Choose your delivery option</h6>
+                    <button class="btn btn-outline-dark text-left" onclick="deliveryPriceCalculator('aug25')">Friday,
+                        Aug 25 FREE Prime Delivery </button>
+                    <button class="btn btn-outline-dark text-left" onclick="deliveryPriceCalculator('aug21')">Friday,
+                        Aug 21
+                        Delivery charge $20</button>
+
+                </div>
+                <table class="table  w-50">
+
+                    <tbody>
+                        <tr>
+
+                            <td class="fw-bolder">Best Price</td>
+                            <td class="fw-bolder">$1299</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Extra Memory Cost</td>
+                            <td class="fw-bold">$<span id="memory-cost">0</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Extra Storage Cost</td>
+                            <td class="fw-bold">$<span id="storage-cost">0</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Delivery charge</td>
+                            <td class="fw-bold">$<span id="delivery-cost">0</span></td>
+                        </tr>
+
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="fw-bolder">Total Price</td>
+                            <td class="fw-bolder">$<span id="total-cost">1299</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="w-50">
+                    <h6>Add Pomo code</h6>
+                    <div class="d-flex">
+                        <input id="coupon-code" type="text" class="form-control" name="" id="">
+                        <button onclick="couponCodeMatcher()" class="btn btn-danger">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1 class="text-center">Total: $<span id="discount-total-price">1299</span> </h1>
+    </section>
+
+
+    <script src="js/app.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
