@@ -65,3 +65,22 @@ function couponCodeMatcher() {
         couponCode.value = "";
     }
 }
+
+/*
+1. find the private repo link (either assignment submitted or click on the link to create the private repo)
+2. create a folder where to put the repo .git file [transferAssignment]
+3. copy .git link from your private repo
+4. open cmd and cd to the transferAssignment folder
+5. git clone --bare <paste the .git link of the private repo>
+6. cd to the private repo .git folder
+7. go to your github profile and create a public repo
+8. copy the .git link of your public repo
+7. git push --mirror <.git link to your public repo>
+8. [ optional] git remote set-url origin <.git link to your public repo>
+------------------------
+add some changes
+1. git clone <public repo .git link>
+2. make changes
+3.
+
+*/
